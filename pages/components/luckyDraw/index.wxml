@@ -1,0 +1,22 @@
+<!--pages/components/luckyDraw/index.wxml-->
+<!-- <text>pages/components/luckyDraw/index.wxml</text> -->
+<view class="stop">
+  <text>停止位置:{{!luckdraw}}</text>
+  <input bindinput="stopinput" disabled="{{!luckdraw}}" type="text" value="0"></input>
+</view>
+<view class="luckdraw">
+  <view class="draw" wx:for="{{detail}}" wx:key="index" data-index="{{index}}">
+    <view wx:if="{{index != 4}}" class="draw-curr" style="{{index == cuvin?'border:1px solid #D9A7FF;':''}}">
+      <view class="draw-image">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="draw-text">{{item.name}}</view>
+    </view>
+    <view wx:if="{{index == 4}}" class="draw-curr">
+      <view class="cubr-vie" style="{{frequency <= 0 || !luckdraw?'background-color:#EEA4B3;':''}}" bindtap="{{frequency > 0 && luckdraw?'luckdraw':''}}">
+        <view>{{item.name}}</view>
+        <view>还有{{frequency}}次抽奖机会</view>
+      </view>
+    </view>
+  </view>
+</view>

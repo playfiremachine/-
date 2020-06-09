@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/components/luckyDraw/index",
+    "pages/index/index",
+    "pages/components/icon/index",
+    "pages/components/navbar/index",
+    "pages/homepage/homepage",
+    "pages/components/luckyDrawtest/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

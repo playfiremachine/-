@@ -1,0 +1,14 @@
+<!--logs.wxml-->
+
+<view class='view-page'>
+  <navbar page-name="logs.wxml"></navbar>
+  <view class='page-content'>
+    <!--这里放你的内容-->
+    <view class="container log-list">
+      <block wx:for="{{logs}}" wx:for-item="log">
+        <text class="log-item">{{index + 1}}. {{log}}</text>
+      </block>
+    </view>
+    <!--这里放你的内容-->
+  </view>
+</view>

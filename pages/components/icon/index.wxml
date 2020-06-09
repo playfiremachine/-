@@ -1,0 +1,9 @@
+<!--pages/components/icon/index.wxml-->
+<text>pages/components/icon/index.wxml</text>
+<view
+  class="custom-class ss-font ss-icon-{{ name }}"
+  style="{{ color ? 'color: ' + color : '' }}; {{ size ? 'font-size: ' + size : '' }}"
+  bind:tap="onClick"
+>
+  <view wx:if="{{ info !== null }}" class="ss-icon__info">{{ info }}</view>
+</view>
